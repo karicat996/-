@@ -1,0 +1,84 @@
+.container {
+   width:400px;
+   min-height: 500px;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0 0 40px rgba(0,0,0,0.1);
+   padding: 40px 50px;
+
+
+   position: fixed;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+  }
+   
+  .inputGroup {
+    margin-bottom: 24px;
+   
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+   
+    input { 
+      width: 100%;
+      height: 40px;
+      border: 1px solid #e7e7e7;   // 浅灰色边框 
+      border-radius: 4px;
+      padding: 0 12px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+   
+      &:focus {
+        border-color: #00a1d6;     // B 站主题色 
+        outline: none;             // 移除默认聚焦轮廓 
+      }
+    }
+  }
+   
+  .radioGroup {
+    margin-bottom: 15px;
+   
+    label {
+      margin-left: 5px;
+    }
+  }
+   
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+   
+    button {
+      width: 100%;
+      height: 42px;
+      background: linear-gradient(135deg, #00a1d6, #0091c8); // B 站渐变蓝 
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+     
+      &:hover {
+        opacity: 0.9;                // 悬停透明效果 
+      }
+    }
+  }
+   
+  .linkGroup {
+    display: flex;
+    justify-content: space-between;
+   
+    a {
+      color: #007bff;
+      text-decoration: none;
+      cursor: pointer;
+   
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }

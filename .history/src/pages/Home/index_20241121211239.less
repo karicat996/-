@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arail, sans-serif;
+}
+
+
+.header-container{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-container{
+    flex: 1 1 200px;
+    background-color: #f0f0f0;
+    padding: 20px
+}
+
+.middle-container{
+    flex: 2 1 400px;
+    background-color: white;
+    padding: 20px;
+}
+
+.middle-on-container {
+    flex: 1; /* 占据可用空间 */
+    background-color: #e0e0e0;
+    margin-bottom: 10px; /* 下方间距 */
+}
+
+.middle-under-container {
+    flex: 1; /* 占据可用空间 */
+    background-color: #d0d0d0;
+}
+
+.right-container {
+    flex: 1 1 200px; /* 最小宽度 200px，允许扩展 */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+

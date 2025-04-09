@@ -1,0 +1,81 @@
+//定义less变量
+@colorTextTertiary: #d9d9d9;
+@fontSizeSM: 12px;
+@colorError: #f5222d;
+
+.lunar {
+    color: @colorTextTertiary;
+    font-size: @fontSizeSM;
+  }
+
+.weekend {
+color: @colorError;
+
+&.gray {
+    opacity: 0.4;
+}
+}
+
+
+.wrapper {
+    width: 450px;
+    border: 1px solid @colorBorderSecondary;
+    border-radius: @borderRadiusOuter;
+    padding: 5px;
+}
+
+.dateCell {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      inset-inline-start: 0;
+      inset-inline-end: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 40px;
+      max-height: 40px;
+      background: transparent;
+      transition: background-color 300ms;
+      border-radius: @borderRadiusOuter px;
+      border: 1px solid transparent;
+      box-sizing: border-box;
+    }
+    &:hover:before {
+      background: rgba(0, 0, 0, 0.04);
+    }
+}
+
+
+
+.today {
+    &:before {
+        border: 1px solid @colorPrimary;
+      }
+}
+
+
+.text {
+    position: relative;
+    z-index: 1;
+}
+
+.current {
+    color: @colorTextLightSolid;
+      &:before {
+        background: @colorPrimary;
+      }
+      &:hover:before {
+        background: @colorPrimary;
+        opacity: 0.8;
+      }
+      .lunar{
+        color: @colorTextLightSolid;
+        opacity: 0.9;
+      }
+      .weekend {
+        color: @colorTextLightSolid;
+      }
+
+}

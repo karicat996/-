@@ -1,0 +1,38 @@
+.layouts {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh; // 布局占满视口高度
+  
+    .main-content {
+      display: flex;
+      flex: 1; 
+      overflow: auto;//允许主内容区域滚动
+    }
+  }
+  
+  // 顶部导航样式
+  .top-nav {
+    height: 60px;
+    background-color: #333; // 顶部导航背景色
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  // 侧边导航样式
+  .side-nav {
+    width: 200px;
+    background-color: #f0f0f0; // 侧边导航背景色
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  // 主内容样式
+  .content {
+    flex: 1; // 让内容区域填满主内容空间的剩余部分
+    padding: 20px;
+    background-color: #fafafa;
+    overflow-y: auto;
+  }

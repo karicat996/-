@@ -1,0 +1,151 @@
+/* 基础容器样式 */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+  }
+   
+  /* 表单主体样式 */
+  .auth-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 420px;
+    transition: all 0.3s ease;
+  }
+   
+  /* 表单标题 */
+  .auth-form h2 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+   
+  /* 表单分组样式 */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+   
+  .form-group label {
+    display: block;
+    color: #4a5568;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+   
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+   
+  .form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  }
+   
+  /* 错误提示样式 */
+  .error-message {
+    background: #fed7d7;
+    color: #c53030;
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #feb2b2;
+  }
+   
+  /* 按钮交互样式 */
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+   
+  button[type="submit"] {
+    background: #667eea;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+   
+  button[type="submit"]:hover {
+    background: #5a67d8;
+  }
+   
+  button[type="button"] {
+    background: transparent;
+    color: #667eea;
+    padding: 0.8rem;
+    border: 2px solid #c3dafe;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+   
+  button[type="button"]:hover {
+    background: #ebf4ff;
+    border-color: #a3bffa;
+  }
+   
+  /* 记住密码样式 */
+  .remember-me {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+   
+  .remember-me label {
+    color: #4a5568;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+   
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #667eea;
+    cursor: pointer;
+  }
+   
+  /* 忘记密码链接 */
+  .forgot-password button {
+    width: 100%;
+    background: #f7fafc;
+    color: #667eea;
+    border: 2px solid #e2e8f0;
+  }
+   
+  /* 响应式设计 */
+  @media (max-width: 480px) {
+    .auth-container {
+      padding: 1rem;
+    }
+    
+    .auth-form {
+      padding: 1.5rem;
+    }
+    
+    .action-buttons button {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+    }
+  }

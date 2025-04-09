@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arail, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 135vh;
+    overflow: hidden;
+
+}
+
+.header-container{
+    width: 100%;
+    height: 7%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+    background-color: #5ece5e;
+    color: rgba(255, 255, 255, 0.514);
+    padding: 10px 0;
+}
+
+.core-container{
+    display: flex;
+    width: 100%;
+    height: 60%;
+
+}
+
+
+.left-container{
+    float: left;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    width: 22%;
+    height: 100%;
+
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    width: 52%;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.middle-on-container {
+    flex: 0 0 32%; /* 占据可用空间 */
+    background-color: #4625253b;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px; /* 下方间距 */
+    flex-shrink: 1;
+
+}
+
+.middle-under-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* 占据可用空间 */
+    width: 100%;
+    flex-basis: 250px;
+    background-color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    flex-shrink: 1;
+}
+
+.right-container {
+    float: right;
+    background-color: white;
+    border: 1px solid rgba(104, 94, 94, 0.5);
+    width: 22%;
+    height: 100%;
+    
+}
+
+.footer-container{
+    width: 100%;
+    height: 5%;
+    flex-wrap: wrap;
+    background-color: #767a76;
+    color: rgba(255, 255, 255, 0.514);
+    padding: 10px 0;
+}
+

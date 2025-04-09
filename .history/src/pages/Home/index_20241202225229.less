@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arail, sans-serif;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+
+}
+
+.header-container{
+    width: 100%;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+.core-container{
+    overflow: hidden;
+
+}
+
+
+.left-container{
+    flex-wrap: nowrap;
+    flex: 1 1 200px;
+    background-color: red;
+    width: 20%;
+
+}
+
+.middle-container{
+    flex-wrap: nowrap;
+    flex: 2 1 400px;
+    background-color: white;
+    width: 20%;
+    padding: 20px;
+
+}
+
+.middle-on-container {
+    flex-wrap: wrap;
+    flex: 1; /* 占据可用空间 */
+    background-color: #4625253b;
+    width: 20%;
+    margin-bottom: 10px; /* 下方间距 */
+
+}
+
+.middle-under-container {
+    flex-wrap: wrap;
+    flex: 1; /* 占据可用空间 */
+    width: 20%;
+    background-color: #343e5e;
+
+}
+
+.right-container {
+    flex-wrap: nowrap;
+    flex: 1 1 200px; /* 最小宽度 200px，允许扩展 */
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+
+}
+
+

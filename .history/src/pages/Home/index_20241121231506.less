@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arail, sans-serif;
+}
+
+
+.header-container{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-container{
+    flex-wrap: nowrap;
+    flex: 1 1 200px;
+    background-color: red;
+    width: 20%;
+    margin:10px；
+}
+
+.middle-container{
+    flex-wrap: nowrap;
+    flex: 2 1 400px;
+    background-color: white;
+    width: 20%;
+    padding: 20px;
+    margin-bottom:10px；
+}
+
+.middle-on-container {
+    flex-wrap: wrap;
+    flex: 1; /* 占据可用空间 */
+    background-color: #4625253b;
+    width: 20%;
+    margin-bottom: 10px; /* 下方间距 */
+    margin-bottom:10px；
+}
+
+.middle-under-container {
+    flex-wrap: wrap;
+    flex: 1; /* 占据可用空间 */
+    width: 20%;
+    background-color: #343e5e;
+    margin-bottom:10px；
+}
+
+.right-container {
+    flex-wrap: nowrap;
+    flex: 1 1 200px; /* 最小宽度 200px，允许扩展 */
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom:10px；
+}
+
+
