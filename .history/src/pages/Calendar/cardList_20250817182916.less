@@ -1,0 +1,26 @@
+/* 网格容器 */
+.Container-cardlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    gap: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px; /* 建议增加内边距 */
+
+    max-height: 80vh;       /* 限制最大高度为视口80% */
+    overflow-y: auto;       /* 启用垂直滚动 */
+    padding: 10px;          /* 避免内容贴边 */
+    
+    /* 响应式适配 */
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* 小屏幕单列显示 */
+    }
+  }
+  
+  /* 卡片项（直接子元素） */
+  .Container-cardlist > .ant-card {
+    position: relative;
+    width: 100%; /* 充满网格单元格 */
+    aspect-ratio: 1/1.2; /* 可选：固定宽高比 */
+  }
